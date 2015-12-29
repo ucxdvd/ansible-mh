@@ -1,0 +1,28 @@
+---
+- name: file fetching experiments
+  hosts: all
+  vars:
+  - fetchdir: fetched
+  - tomcatbase: jakarta-tomcat
+  tasks:
+  - name: catalina.out for servlet
+    fetch: dest={{fetchdir}} src={{tomcatbase}}-{{servlet}}/logs/catalina.out
+    when: servlet is defined
+  - name: catalina.out (core)
+    fetch: dest={{fetchdir}} src={{tomcatbase}}/logs/catalina.out
+    when: servlet is undefined
+  - name: catalina.out (all servlets)
+    fetch: dest={{fetchdir}} src={{tomcatbase}}-{{item}}/logs/catalina.out
+    with_items:
+    - "inout"
+    - "mms"
+    - "output"
+    - "plan"
+    - "pub"
+    - "tools"
+    - "web"
+    when: servlet is undefined
+  - name: zip it
+    local_action: command tar cvzf catalina.tgz fetched
+  - name: mailit
+    local_action: mail subject="catalina logs" to="dave.vandijck@mediahuis.be" attach="catalina.tgz"
