@@ -102,29 +102,45 @@ meth04uat-idx-cor
 meth04-db-cor
 meth04-idx-cor 
 
-[dev:vars]
-portx=3
+# group variables : move to global group_vars
+#[dev:vars]
+#portx=3
+#
+#[uat:vars]
+#portx=4
+#
+#[prod:vars]
+#portx=5
+#
+#[meth01:vars]
+#porty=1
+#servlets=["main","inout","web","output","tools","mms","pub"]
+#
+#[meth02:vars]
+#porty=2
+#servlets=["main","inout"]
+#
+#[meth03:vars]
+#porty=3
+#servlets=["main","inout","web"]
+#
+#[meth04:vars]
+#porty=4
+#servlets=["main","inout","web","plan","output","tools","mms","pub","pub2","pub3"]
 
-[uat:vars]
-portx=4
+# This does NOT work,cannot create dictionaries in inventory file because it is  .ini format :
+#[all:vars}
+#servletport: {"main": 31, "inout": 39, "web": 43, "plan": 35, "output": 47, "tools": 56, "mms": 60, "pub": 64, "pub2": 68, "pub3": 72}
 
-[prod:vars]
-portx=5
-
-[meth01:vars]
-porty=1
-servlets=["main","inout","web","output","tools","mms","pub"]
-
-[meth02:vars]
-porty=2
-servlets=["main","inout"]
-
-[meth03:vars]
-porty=3
-servlets=["main","inout","web"]
-
-[meth04:vars]
-porty=4
-servlets=["main","inout","web","plan","output","tools","mms","pub","pub2","pub3"]
-
+#- servletport:
+#   main: 31
+#   inout: 39
+#   web: 43
+#   plan: 35
+#   output: 47
+#   tools: 56
+#   mms: 60
+#   pub: 64
+#   pub2: 68
+#   pub3: 72
 
