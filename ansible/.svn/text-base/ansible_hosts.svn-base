@@ -51,8 +51,6 @@ meth03dev-db-cor ansible_ssh_user=meth03
 meth03dev-idx-cor ansible_ssh_user=meth03
 meth04dev-db-cor ansible_ssh_user=meth04
 meth04dev-idx-cor ansible_ssh_user=meth04
-meth05dev-db-cor ansible_ssh_user=meth05
-meth05dev-idx-cor ansible_ssh_user=meth05
 [uat]
 meth01uat-db-cor ansible_ssh_user=meth01
 meth01uat-idx-cor ansible_ssh_user=meth01
@@ -62,7 +60,7 @@ meth03uat-db-cor ansible_ssh_user=meth03
 meth03uat-idx-cor ansible_ssh_user=meth03
 meth04uat-db-cor ansible_ssh_user=meth04
 meth04uat-idx-cor ansible_ssh_user=meth04
-[prd]
+[prod]
 meth01-db-cor ansible_ssh_user=meth01
 meth01-idx-cor ansible_ssh_user=meth01
 meth02-db-cor ansible_ssh_user=meth02
@@ -103,39 +101,6 @@ meth04uat-db-cor
 meth04uat-idx-cor
 meth04-db-cor
 meth04-idx-cor 
-
-
-[meth05]
-meth05dev-db-cor
-meth05dev-idx-cor
-meth05uat-db-cor
-meth05uat-idx-cor
-meth05-db-cor
-meth05-idx-cor
-
-[pdev]
-grbnofdevd01 ansible_ssh_user=root
-grbnofdevd02 ansible_ssh_user=root
-grbnofdevd03 ansible_ssh_user=root
-grbnofdevd04 ansible_ssh_user=root
-grbnofdevd05 ansible_ssh_user=root
-grbnofdevd06 ansible_ssh_user=root
-
-[puat]
-grbnofuata01 ansible_ssh_user=root
-grbnofuata02 ansible_ssh_user=root
-grbnofuata03 ansible_ssh_user=root
-grbnofuata04 ansible_ssh_user=root
-grbnofuata05 ansible_ssh_user=root
-grbnofuata06 ansible_ssh_user=root
-
-[pprd]
-grbnofnodp05 ansible_ssh_user=root
-grbnofnodp06 ansible_ssh_user=root
-grbnofnodp07 ansible_ssh_user=root
-grbnofnodp08 ansible_ssh_user=root
-grbnofnodp09 ansible_ssh_user=root
-grbnofnodp10 ansible_ssh_user=root
 
 # group variables : move to global group_vars
 #[dev:vars]

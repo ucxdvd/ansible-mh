@@ -1,0 +1,5 @@
+---
+- name: Nagios stuff
+  hosts: localhost
+  tasks:
+  - nagios: action=unsilence_nagios

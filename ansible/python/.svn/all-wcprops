@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/python
+END
+ar_inventory.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/python/ar_inventory.py
+END
+ar_tomcatversion.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/python/ar_tomcatversion.py
+END
+ar_uri.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/python/ar_uri.py
+END
