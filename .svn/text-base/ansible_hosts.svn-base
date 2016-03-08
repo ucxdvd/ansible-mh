@@ -51,8 +51,6 @@ meth03dev-db-cor ansible_ssh_user=meth03
 meth03dev-idx-cor ansible_ssh_user=meth03
 meth04dev-db-cor ansible_ssh_user=meth04
 meth04dev-idx-cor ansible_ssh_user=meth04
-meth05dev-db-cor ansible_ssh_user=meth05
-meth05dev-idx-cor ansible_ssh_user=meth05
 [uat]
 meth01uat-db-cor ansible_ssh_user=meth01
 meth01uat-idx-cor ansible_ssh_user=meth01
@@ -104,10 +102,6 @@ meth04uat-idx-cor
 meth04-db-cor
 meth04-idx-cor 
 
-
-[meth05]
-meth05dev-db-cor
-meth05dev-idx-cor
 # group variables : move to global group_vars
 #[dev:vars]
 #portx=3

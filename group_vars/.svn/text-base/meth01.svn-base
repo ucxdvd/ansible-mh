@@ -5,5 +5,5 @@ servlets:
  - web
  - output
  - tools
+ - mms
  - pub
-# - mms

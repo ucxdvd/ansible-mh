@@ -1,0 +1,4 @@
+porty: 2
+servlets:
+ - main
+ - inout

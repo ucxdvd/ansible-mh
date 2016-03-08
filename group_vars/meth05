@@ -1,4 +1,4 @@
-porty: 4
+porty: 5
 servlets: 
  - main
  - inout
@@ -8,5 +8,3 @@ servlets:
  - tools
  - pub
  - pub2
- - pub3
-# - mms

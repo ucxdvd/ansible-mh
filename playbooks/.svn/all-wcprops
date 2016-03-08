@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks
+END
+groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/groups.yml
+END
+slack2.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/slack2.yml
+END
+badboys.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/badboys.yml
+END
+webcheck-slack.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/webcheck-slack.yml
+END
+freedb.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/freedb.yml
+END
+top5.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/top5.yml
+END
+webcheck-slack-include.yml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/webcheck-slack-include.yml
+END
+webcheck_globalvars.yml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/webcheck_globalvars.yml
+END
+fetchfile.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/fetchfile.yml
+END
+slackit.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/slackit.yml
+END
+webcheck.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/webcheck.yml
+END
+tomcat_version.yml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/tomcat_version.yml
+END
+webcheck-slack-notify.yml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/webcheck-slack-notify.yml
+END
+slack.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/playbooks/slack.yml
+END

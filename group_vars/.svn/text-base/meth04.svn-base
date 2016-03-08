@@ -6,7 +6,7 @@ servlets:
  - plan
  - output
  - tools
+ - mms
  - pub
  - pub2
  - pub3
-# - mms

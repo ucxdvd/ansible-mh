@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars
+END
+meth02
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/meth02
+END
+meth03
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/meth03
+END
+meth04
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/meth04
+END
+prod
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/prod
+END
+all
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/all
+END
+uat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/uat
+END
+dev
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/dev
+END
+meth01
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/A189/!svn/ver/1032/dave-scripts/ansible/group_vars/meth01
+END

@@ -1,0 +1,7 @@
+  - name: reportslack
+    local_action:
+      module: slack
+      token: T0546K0J2/B0DRMVB0F/Ij2VD0JqJmNoJtpVTEKTjDT3
+      username : " {{ inventory_hostname }} "
+      msg: "{{msg}}"
+

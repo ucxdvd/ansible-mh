@@ -1,0 +1,5 @@
+porty: 3
+servlets:
+ - main
+ - inout
+ - web
