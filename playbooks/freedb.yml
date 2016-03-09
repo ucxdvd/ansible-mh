@@ -1,14 +1,11 @@
 ---
-- name: check resources
-  #callback_plugins = ~/callback_plugins
-  hosts: "*db*"
+- name: Get freedb space
+  hosts: meth*-db-*
   tasks:
-  - name: freedb
-    raw: "bash -lc 'db/bin/dbtool -nosession -space -volume -all {{ansible_user_id}} '"
-    register: foutput
-  #- debug: var=foutput.stdout
-    #with_items: foutput.results
-
-  #- name: freedb
-  #  shell: db/bin/dbtool -nosession -space -volume -all {{ansible_user_id}}
-    #when: not prod
+  - name: fetch freedb
+    shell: versant/vod80/bin/dbtool -nosession -space -volume -all $USER | sed -n 5p | awk '{print $8}'
+    register: freedb
+  #- name: print results
+    #debug: var=freedb
+  - name: print freedb
+    debug: var=freedb.stdout

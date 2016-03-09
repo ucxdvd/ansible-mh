@@ -1,0 +1,11 @@
+---
+- name: Count Deadlocks
+  hosts: meth*-db-*
+  tasks:
+  - name: fetch deadlocks
+    shell: find {{ansible_user_dir}}/cfg/ -maxdepth 1 -type f -mtime -1 -name '*.csv' | wc -l
+    register: deadlocks
+ #- name: print results
+ #  debug: var=deadlocks
+  - name: print deadlocks
+    debug: var=deadlocks.stdout
