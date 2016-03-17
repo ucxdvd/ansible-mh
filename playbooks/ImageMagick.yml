@@ -1,0 +1,26 @@
+---
+- name: Deploy ImageMagick, Eidos Style(tm)
+  hosts: all
+  tasks:
+  - name: Upload Imagemagick package
+    copy: src=/root/ImageMagick-6.6.5-10.x86_64.rpm dest=/tmp
+  #- yum: name=epel-release state=installed
+  #- shell: rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+  #  register: result
+  #- debug: var=result
+  - rpm_key: state=present key=http://apt.sw.be/RPM-GPG-KEY.dag.txt
+  - shell: wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el5.rf.x86_64.rpm
+  - shell: rpm -Uvh rpmforge-release-0.5.3-1.el5.rf.x86_64.rpm
+  - shell: rpm -e --nodeps ImageMagick.i386 ImageMagick.x86_64
+  - yum: name={{item}} state=latest
+    with_items: 
+    - djvulibre.x86_64
+    - jasper.x86_64
+    - libtool-ltdl.x86_64
+  - shell: rpm -Uvh /tmp/ImageMagick-6.6.5-10.x86_64.rpm
+  - shell: convert --version
+    register: result
+  - debug: var=result
+  - shell: identify --version
+    register: result
+  - debug: var=result

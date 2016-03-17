@@ -62,6 +62,8 @@ meth03uat-db-cor ansible_ssh_user=meth03
 meth03uat-idx-cor ansible_ssh_user=meth03
 meth04uat-db-cor ansible_ssh_user=meth04
 meth04uat-idx-cor ansible_ssh_user=meth04
+meth05uat-db-cor ansible_ssh_user=meth05
+meth05uat-idx-cor ansible_ssh_user=meth05
 [prd]
 meth01-db-cor ansible_ssh_user=meth01
 meth01-idx-cor ansible_ssh_user=meth01
@@ -71,6 +73,8 @@ meth03-db-cor ansible_ssh_user=meth03
 meth03-idx-cor ansible_ssh_user=meth03
 meth04-db-cor ansible_ssh_user=meth04
 meth04-idx-cor ansible_ssh_user=meth04
+meth05-db-cor ansible_ssh_user=meth05
+meth05-idx-cor ansible_ssh_user=meth05
 
 [meth01]
 meth01dev-db-cor

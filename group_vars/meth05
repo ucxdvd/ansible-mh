@@ -3,8 +3,8 @@ servlets:
  - main
  - inout
  - web
- - plan
  - output
  - tools
  - pub
  - pub2
+# - plan
