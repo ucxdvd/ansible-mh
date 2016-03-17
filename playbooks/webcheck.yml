@@ -15,6 +15,41 @@
       pub: 64
       pub2: 68
       pub3: 72
+    idxport:
+      dish_action: 200
+      dish_port: 201
+      alerter1: 010
+      alerter1_jmx: 014
+      alerter1_http: 018
+      alerter2: 011
+      alerter2_jmx: 015
+      alerter2_http: 019
+      alerter3: 012
+      alerter3_jmx: 016
+      alerter3_http: 020
+      alerter4: 013
+      alerter4_jmx: 017
+      alerter4_http: 021
+      adre1_index: 041
+      adre1: 042
+      adre1_service: 043
+      adre2_index: 044
+      adre2: 045
+      adre2_service: 046
+      adre3_index: 047
+      adre3: 048
+      adre3_service: 049
+      adre4_index: 053
+      adre4: 054
+      adre4_service: 055
+      dre1_index: 050
+      dre1: 051
+      dre1_service: 052
+    dbport:
+      #naming service is too environment specific, must make group_vars
+      #notification0: is there alogic behind notifier ports?
+      
+
   tasks:
   - name: uritest
     #debug: msg="http://{{inventory_hostname}}}:{{portx}}{{portx}}1{{servletport.main}}/manager/html"
