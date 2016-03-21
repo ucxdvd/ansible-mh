@@ -1,0 +1,19 @@
+---
+- name: check goldcopy servers & goldcopies
+  hosts: grbnofgolp*
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: check availability of goldcopy servers
+    action: ping 
+
+- name: per dbserver, check existence of snapshot
+  hosts: meth*-db-cor:&prd
+  #gather_facts: no
+  tasks:
+  - name: check goldcopy
+    shell: ssh grbfasnasp01 snap list {{ansible_user_id}}_vol|grep goldcopy|head -n1
+    #shell: ssh "grbfasnasp01 snap list {{ansible_user_id}}_vol|awk '/goldcopy/{if(NR=1){print $7,$8,$9,$10}}'"
+    register: result
+  - debug: msg="Last verified goldcopy {{result.stdout[24:30]}}"
+
