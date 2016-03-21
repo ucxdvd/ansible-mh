@@ -141,6 +141,12 @@ grbnofnodp08 ansible_ssh_user=root
 grbnofnodp09 ansible_ssh_user=root
 grbnofnodp10 ansible_ssh_user=root
 
+[goldcopy]
+grbnofgolp01 ansible_ssh_user=meth01
+grbnofgolp02 ansible_ssh_user=meth02
+grbnofgolp03 ansible_ssh_user=meth03
+grbnofgolp04 ansible_ssh_user=meth04
+
 # group variables : move to global group_vars
 #[dev:vars]
 #portx=3

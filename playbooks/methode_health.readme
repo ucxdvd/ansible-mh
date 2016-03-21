@@ -1,0 +1,4 @@
+methode_health.yml playbook including other playbooks to do actual work
+every included playbook should check 1 "concept", by default on all relevant hosts, and should also work with an individual host as parameter
+nagios will make use of these included playbooks as well
+reporting/alerting (to email,slack,...) playbook will also use the individual playbooks
