@@ -1,0 +1,14 @@
+---
+- name: sets correct sysstat parameters
+  hosts: pdev:puat:pprd
+  tasks:
+  - name: ensure sysstat is installed
+    yum: name=sysstat state=present
+  - name: enforce 7 day history
+    lineinfile: dest=/etc/sysconfig/sysstat regexp=^HISTORY= line=HISTORY=7 backup=yes state=present
+  - name: enable disk stats 
+    lineinfile: dest=/etc/sysconfig/sysstat regexp=^SADC_OPTIONS= line=SADC_OPTIONS="-d" backup=yes state=present
+  - name: get /etc/sysconfig/sysstat contents
+    command: cat /etc/sysconfig/sysstat
+    register: result
+  - debug: var=result.stdout_lines
