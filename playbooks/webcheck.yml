@@ -15,7 +15,7 @@
       pub: 64
       pub2: 68
       pub3: 72
-    idxport:
+    idxport: #waste of time, ansible has no check_tcp AND there is little logic in the portnumbers : a full table would be needed 
       dish_action: 200
       dish_port: 201
       alerter1: 010
@@ -60,6 +60,8 @@
     uri: url="http://{{inventory_hostname}}:{{portx}}{{porty}}1{{servletport[item]}}/manager/html" user="admin" password="admin"  #works! brackets ftw!
     with_items: "{{servlets}}"
     register: result
+  #- name: idxservices
+    
  #   ignore_errors: True
  # - debug: var=result
  #   when: result|failed

@@ -10,3 +10,24 @@ servlets:
  - pub2
  - pub3
 # - mms
+idxservices:
+ - dish_action
+ - dish_port
+ - alerter1
+ - alerter1_jmx
+ - alerter1_http
+ - alerter2
+ - alerter2_jmx
+ - alerter2_http
+ - alerter3
+ - alerter3_jmx
+ - alerter3_http
+ - alerter4
+ - alerter4_jmx
+ - alerter4_http
+ - dre1
+ - dre1_service
+ - dre1_index
+ - adre1
+ - adre1_service
+ - adre1_index
