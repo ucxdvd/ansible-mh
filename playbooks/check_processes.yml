@@ -1,0 +1,35 @@
+---
+- name: Check Processes for DB
+  hosts: meth*-db-*
+  tasks:
+  - name: Check Db Processes
+    command: cluster/check_{{item}}.bash
+    register: result
+    failed_when: (result.rc not in [110,100])
+    changed_when: (result.rc in [100])
+    with_items: "{{dbservices}}"
+    tags:
+    - db
+#  - debug: var=result
+
+- name: Check Processes for IDX
+  hosts: meth*-idx-*
+  tasks:
+  - name: Check IDX Processes
+    command: cluster/check_{{item}}.bash
+    register: result
+    failed_when: (result.rc not in [110,100])
+    changed_when: (result.rc in [100])
+    with_items: "{{idxservices}}"
+    tags:
+    - idx
+#  - debug: var=result
+
+  # goal:
+  # list check as failed if rc 100, but continue.  maybe result->changed
+  # list check as ok if rc 110 (report nothing). maybe result->green/ok
+  # list check as failed if other result and let ansible fail
+  #
+  # for input of services to check, read admin/start_stop_processes
+  # Works!
+  # Now either add all services to check in host/group vars, or somehow read them from start_stop_processes.list

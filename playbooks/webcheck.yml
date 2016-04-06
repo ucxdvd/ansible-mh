@@ -1,5 +1,5 @@
 ---
-- name: check services via http(s) gets
+- name: check services via http(s) gets (depends on group_vars/meth*)
   gather_facts: no
   hosts: "*idx*"
   connection: local
@@ -15,7 +15,7 @@
       pub: 64
       pub2: 68
       pub3: 72
-    idxport: #waste of time, ansible has no check_tcp AND there is little logic in the portnumbers : a full table would be needed 
+    idxport: #pay attention, there is little logic in the portnumbers : a full table might be needed. also, they do not necessarily allow remote checking
       dish_action: 200
       dish_port: 201
       alerter1: 010
@@ -45,9 +45,6 @@
       dre1_index: 050
       dre1: 051
       dre1_service: 052
-    dbport:
-      #naming service is too environment specific, must make group_vars
-      #notification0: is there alogic behind notifier ports?
       
 
   tasks:
@@ -60,7 +57,35 @@
     uri: url="http://{{inventory_hostname}}:{{portx}}{{porty}}1{{servletport[item]}}/manager/html" user="admin" password="admin"  #works! brackets ftw!
     with_items: "{{servlets}}"
     register: result
-  #- name: idxservices
+    tags:
+    - uri
+#  - name: idxservices
+#    command: nc -z {{inventory_hostname}} {{portx}}{{porty}}{{idxport[item]}}
+#    with_items: "{{idxservices}}"
+#    tags:
+#    - idx
+    
+    
+#- name: check services via http(s) gets (depends on group_vars/meth*)
+#  gather_facts: no
+#  hosts: "*db*"
+#  connection: local
+#  vars:
+#    dbport:
+#      #naming service is too environment specific, must make group_vars
+#      #notification0: is there alogic behind notifier ports?
+#      haproxy: 405
+#      eomdb1: "001"
+#      eomdb2: "002"
+#      eomdb3: "003"
+#      eomdb4: "004"
+#  tasks:
+#  - name: dbservices
+#    command: nc -z {{inventory_hostname}} {{portx}}{{porty}}{{dbport[item]}}
+#    with_items: "{{dbservices}}"
+#    tags:
+#    - db
+## create a new play (with hosts: etc for db servers
     
  #   ignore_errors: True
  # - debug: var=result

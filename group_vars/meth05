@@ -8,3 +8,38 @@ servlets:
  - pub
  - pub2
 # - plan
+dbservices:
+ - eomdb1
+ - eomdb2
+ - eomdb3
+ - eomdb4
+ - haproxy
+ - nameservice
+ - versant
+ - eomse1
+ - eomseqc
+ - notification0
+ - notification1
+ - notification2
+ - alerter1
+ - alerter2
+ - alerter3
+ - alerter4
+idxservices:
+ - dish
+ - autonomy1
+ - autonomy_alerter1
+ - autonomy_alerter2
+ - autonomy_alerter3
+ - autonomy_alerter4
+ - tomcat
+ - tomcat_inout
+ - tomcat_output
+ - tomcat_web
+ - tomcat_tools
+ - tomcat_pub
+ - tomcat_pub2
+ - tomcat_pub3
+# - tomcat_mms
+# - tomcat_plan
+

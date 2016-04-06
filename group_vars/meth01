@@ -7,3 +7,8 @@ servlets:
  - tools
  - pub
 # - mms
+dbservices:
+ - eomdb1
+ - eomdb2
+ - eomdb3
+ - eomdb4

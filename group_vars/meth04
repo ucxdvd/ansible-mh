@@ -10,24 +10,58 @@ servlets:
  - pub2
  - pub3
 # - mms
-idxservices:
- - dish_action
- - dish_port
+#idxservices:
+# - dish_action
+# - dish_port
+# - alerter1
+# - alerter1_jmx
+# - alerter1_http
+# - alerter2
+# - alerter2_jmx
+# - alerter2_http
+# - alerter3
+# - alerter3_jmx
+# - alerter3_http
+# - alerter4
+# - alerter4_jmx
+# - alerter4_http
+# - dre1
+# - dre1_service
+# - dre1_index
+# - adre1
+# - adre1_service
+# - adre1_index
+dbservices:
+ - eomdb1
+ - eomdb2
+ - eomdb3
+ - eomdb4
+ - haproxy
+ - nameservice
+ - versant
+ - eomse1
+ - eomseqc
+ - notification0
+ - notification1
+ - notification2
  - alerter1
- - alerter1_jmx
- - alerter1_http
  - alerter2
- - alerter2_jmx
- - alerter2_http
  - alerter3
- - alerter3_jmx
- - alerter3_http
  - alerter4
- - alerter4_jmx
- - alerter4_http
- - dre1
- - dre1_service
- - dre1_index
- - adre1
- - adre1_service
- - adre1_index
+idxservices:
+ - dish
+ - autonomy1
+ - autonomy_alerter1
+ - autonomy_alerter2
+ - autonomy_alerter3
+ - autonomy_alerter4
+ - tomcat
+ - tomcat_inout
+ - tomcat_output
+ - tomcat_web
+ - tomcat_tools
+ - tomcat_pub              
+ - tomcat_pub2
+ - tomcat_pub3
+# - tomcat_mms
+# - tomcat_plan

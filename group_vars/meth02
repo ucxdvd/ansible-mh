@@ -2,3 +2,48 @@ porty: 2
 servlets:
  - main
  - inout
+dbservices:
+ - eomdb1
+ - eomdb2
+ - eomdb3
+ - eomdb4
+# - haproxy
+ - nameservice
+ - versant
+ - eomse1
+ - eomse1_2
+ - eomse1_3
+ - eomse2_2
+ - eomse2_3
+ - eomse2_4
+ - eomse3_1
+ - eomseqc
+ - notification
+ - alerter1
+ - alerter2
+ - alerter3
+ - alerter4
+idxservices:
+ - dish
+ - autonomy1
+ - autonomy1_2
+ - autonomy1_3
+ - autonomy2_2
+ - autonomy2_3
+ - autonomy2_4
+ - autonomy3_1
+ - autonomy_alerter1
+ - autonomy_alerter2
+ - autonomy_alerter3
+ - autonomy_alerter4
+ - tomcat
+ - tomcat_inout
+# - tomcat_output
+# - tomcat_web
+# - tomcat_tools
+# - tomcat_pub
+# - tomcat_pub2
+# - tomcat_pub3
+## - tomcat_mms
+# - tomcat_plan
+
