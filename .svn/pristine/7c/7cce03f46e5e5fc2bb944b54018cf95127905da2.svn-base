@@ -1,0 +1,9 @@
+porty: 1
+servlets:
+ - main
+ - inout
+ - web
+ - output
+ - tools
+ - pub
+# - mms

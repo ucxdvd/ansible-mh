@@ -1,0 +1,37 @@
+Latest version, includes playbooks/check_processes.yml
+--This line, and those below, will be ignored--
+
+M    ansible_hosts
+M    group_vars/meth01
+M    group_vars/meth02
+M    group_vars/meth03
+M    group_vars/meth04
+A    group_vars/meth05
+A    group_vars/prd
+A    host_vars
+A    host_vars/meth02-db-cor
+A    host_vars/meth02-idx-cor
+A    host_vars/meth02dev-db-cor
+A    host_vars/meth02dev-idx-cor
+A    host_vars/meth02uat-db-cor
+A    host_vars/meth02uat-idx-cor
+A    host_vars/meth03-db-cor
+A    host_vars/meth03-idx-cor
+A    host_vars/readme.txt
+AM   hosts
+A    playbooks/ImageMagick.yml
+A    playbooks/check_processes.retry
+A    playbooks/check_processes.yml
+A    playbooks/deadlocks.yml
+M    playbooks/freedb.yml
+A    playbooks/freedborg.yml
+A    playbooks/goldcopy.yml
+A    playbooks/methode_health.readme
+A    playbooks/methode_health.yml
+A    playbooks/nagios.yml
+A    playbooks/sysstat.yml
+M    playbooks/webcheck.yml
+A    scripts
+AM   scripts/list_goldcopy.sh
+A    scripts/readme
+A    ssh_config

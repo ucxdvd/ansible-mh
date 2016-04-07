@@ -1,0 +1,38 @@
+---
+- name: check services via http(s) gets
+  gather_facts: no
+  hosts: "*idx*"
+  connection: local
+  vars:
+    servletport:
+      main: 31
+      inout: 39
+      web: 43
+      plan: 35
+      output: 47
+      tools: 56
+      mms: 60
+      pub: 64
+      pub2: 68
+      pub3: 72
+  tasks:
+  - name: uritest
+    #debug: msg="http://{{inventory_hostname}}}:{{portx}}{{portx}}1{{servletport.main}}/manager/html"
+    #debug: msg={{item}}
+    #debug: var=servletport.{{item}} #works!
+    #debug: msg={{servletport[item]}} #also works, needed brackes, you weird ansible you!
+    #debug: msg="http://{{inventory_hostname}}}:{{portx}}{{portx}}1{{servletport[item]}}/manager/html" #works! brackets ftw!
+    uri: url="http://{{inventory_hostname}}:{{portx}}{{porty}}1{{servletport[item]}}/manager/html" user="admin" password="admin" return_content=yes
+    with_items: "{{servlets}}"
+    register: result
+#  - name: check7
+#    debug: msg="Tomcat 7!"
+#    when: "'Tomcat/7' in item.content"
+#    with_items: "{{result.results}}"
+#  - name: check6
+#    debug: msg="Tomcat 6!"
+#    when: "'Tomcat/6' in item.content"
+#    with_items: "{{result.results}}"
+#
+   - name: version_sh
+     shell: "jakarta-tomcat

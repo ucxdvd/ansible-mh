@@ -1,0 +1,64 @@
+---
+- name: Send notification message via Slack
+  hosts: all
+
+  tasks:
+  - name: loadavg1
+    command: cut -f1 -d" " /proc/loadavg
+    register: loadavg_1
+  - name: loadavg5
+    command: cut -f2 -d" " /proc/loadavg
+    register: loadavg_5
+  - name: loadavg15
+    command: cut -f3 -d" " /proc/loadavg
+    register: loadavg_15
+  - name: opcmona
+    shell: ps -o rss -C opcmona --no-headers
+    register: opcmona
+    tags:
+    - process
+
+  - name: testslack
+    local_action:
+      module: slack
+      token: T0546K0J2/B0DRMVB0F/Ij2VD0JqJmNoJtpVTEKTjDT3
+      username : " {{ inventory_hostname }} runaway process "
+      msg: "clusternode : {{ ansible_hostname }} memfree : {{ ansible_memfree_mb }} / {{ ansible_memtotal_mb }} swapfree : {{ ansible_swapfree_mb }} / {{ ansible_swaptotal_mb }} loadavg : {{ loadavg_1.stdout }} {{ loadavg_5.stdout }} {{ loadavg_15.stdout }} {{opcmona.stdout_lines[0] | int }}"
+    when: "{{ opcmona.stdout_lines[0] | int }} > 1000000"
+
+ # - name: Send notification message via Slack all options
+ #   local_action:
+ #     module: slack
+ #     token: T0546K0J2/B0DRMVB0F/Ij2VD0JqJmNoJtpVTEKTjDT3
+ #     msg: "{{ inventory_hostname }} completed"
+ #     channel: "#test2"
+ #     username: "Ansible on {{ inventory_hostname }}"
+ #     #icon_url: "http://www.example.com/some-image-file.png"
+ #     link_names: 0
+ #     parse: 'none'
+ # 
+ # - name: insert a color bar in front of the message for visibility purposes and use the default webhook icon and name configured in Slack
+ #   #slack: #this syntax produces "ssl validation error". use local_action / module: for now
+ #   local_action:
+ #     module: slack
+ #     token: T0546K0J2/B0DRMVB0F/Ij2VD0JqJmNoJtpVTEKTjDT3
+ #     msg: "{{ inventory_hostname }} is alive!"
+ #     #color: good # color requires ansible 2.0
+ #     username: ""
+ #     icon_url: ""
+# attachments returns unsupported on ansible 1.9  
+#  - name: Use the attachments API
+#    local_action:
+#      module: slack
+#      token: T0546K0J2/B0DRMVB0F/Ij2VD0JqJmNoJtpVTEKTjDT3
+#      attachments:
+#        - text: "Display my system load on host A and B"
+#          #color: "#ff00dd" # requires ansible 2.0
+#          title: "System load"
+#          fields:
+#            - title: "System A"
+#              value: "load average: 0,74, 0,66, 0,63"
+#              short: "true"
+#            - title: "System B"
+#              value: "load average: 5,16, 4,64, 2,43"
+#              short: "true"

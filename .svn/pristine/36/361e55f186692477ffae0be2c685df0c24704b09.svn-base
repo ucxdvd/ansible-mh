@@ -1,0 +1,11 @@
+---
+- name: Get freedb space
+  hosts: meth*-db-*
+  tasks:
+  - name: fetch freedb
+    shell: versant/vod80/bin/dbtool -nosession -space -volume -all $USER | sed -n 5p | awk '{print $8}'
+    register: freedb
+  #- name: print results
+    #debug: var=freedb
+  - name: print freedb
+    debug: var=freedb.stdout

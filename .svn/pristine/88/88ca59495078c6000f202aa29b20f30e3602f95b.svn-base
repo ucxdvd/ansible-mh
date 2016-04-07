@@ -1,0 +1,8 @@
+---
+- name : os healthchecks
+  hosts: all
+  tasks:
+  - name: top5rss
+    shell: ps auxwww --sort=rss|tail -n5
+  - name: top5cpu
+    shell: ps auxwww --sort=pcpu|tail -n5

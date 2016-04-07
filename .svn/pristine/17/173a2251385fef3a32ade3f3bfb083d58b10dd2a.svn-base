@@ -1,0 +1,12 @@
+servletport:
+  main: 31
+  inout: 39
+  web: 43
+  plan: 35
+  output: 47
+  tools: 56
+  mms: 60
+  pub: 64
+  pub2: 68
+  pub3: 72
+

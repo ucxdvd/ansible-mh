@@ -1,0 +1,33 @@
+porty: 1
+servlets:
+ - main
+ - inout
+ - web
+ - output
+ - tools
+ - pub
+# - mms
+dbservices:
+ - nameservice
+ - versant
+ - eomdb1
+ - eomdb2
+ - eomdb3
+ - notification
+ - eomse1
+ - eomseqc
+idxservices:
+ - autonomy1
+ - autonomy_alerter1
+ - autonomy_alerter2
+ - autonomy_alerter3
+ - alerter1
+ - alerter2
+ - alerter3
+ - tomcat
+ - tomcat_inout
+ - tomcat_output
+ - tomcat_web
+ - tomcat_pub
+ - tomcat_tools
+# - tomcat_mms

@@ -1,0 +1,143 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	deleted:    .svn/all-wcprops
+#	modified:   .svn/entries
+#	new file:   .svn/format
+#	new file:   .svn/pristine/04/04e5dd695e2191f47f84accc1f00e13ae425d64c.svn-base
+#	new file:   .svn/pristine/09/09f395bc64941a1305189417e79c394a39dede7f.svn-base
+#	new file:   .svn/pristine/0e/0ea97e2cbb8054f962fc202df0de693a04331850.svn-base
+#	new file:   .svn/pristine/11/112a11645ee863be9e9f141b40e91f2bf3070e5e.svn-base
+#	renamed:    group_vars/.svn/text-base/all.svn-base -> .svn/pristine/17/173a2251385fef3a32ade3f3bfb083d58b10dd2a.svn-base
+#	new file:   .svn/pristine/1a/1a4a94bc2f6cec7a54029fdd3cb908c3a9652d27.svn-base
+#	new file:   .svn/pristine/1d/1d0f8ae6fc1f32608daf02e8a20dbfe515caf49f.svn-base
+#	new file:   .svn/pristine/1d/1d794d466c5becee366c5f81fb915f0daac27a52.svn-base
+#	new file:   .svn/pristine/1e/1ea51e045fbe6de716fbbb7532c676b2921a022b.svn-base
+#	renamed:    playbooks/.svn/text-base/slack2.yml.svn-base -> .svn/pristine/1f/1f37ae1dd43baf45d6d525c25644837a5f19cbbd.svn-base
+#	renamed:    group_vars/.svn/text-base/meth03.svn-base -> .svn/pristine/23/23b41c7a5444355339503c6b76efd55966125993.svn-base
+#	new file:   .svn/pristine/26/26a1226361adeb5aafa1eb45c058f1c2943a875e.svn-base
+#	new file:   .svn/pristine/28/285293d900ea3cb448a33ebe3e6fc617ef78a45f.svn-base
+#	new file:   .svn/pristine/29/29e3d0c5ce57a9e81c3f406376687751fcc854ac.svn-base
+#	new file:   .svn/pristine/2b/2b6275eda365cad50d167fe3a387c9bc9fedd54f.svn-base
+#	new file:   .svn/pristine/2f/2fb93dbb8268735d52d02748223c6592f9a940e9.svn-base
+#	new file:   .svn/pristine/31/3180ffb6cce1a63e003c3bbc676497e1eb362f4a.svn-base
+#	renamed:    playbooks/.svn/text-base/webcheck-slack-notify.yml.svn-base -> .svn/pristine/31/318ce91099d0a0d050054843da537cae4f639f02.svn-base
+#	new file:   .svn/pristine/32/328beffc3ee00ee81d4997a52484c0a2c2b0d3cd.svn-base
+#	new file:   .svn/pristine/36/361e55f186692477ffae0be2c685df0c24704b09.svn-base
+#	new file:   .svn/pristine/37/370f8fa36126b82a1489e802cfa29662f928e4e4.svn-base
+#	new file:   .svn/pristine/38/3875e34b06533882c202bf52b96466f996ad1609.svn-base
+#	renamed:    playbooks/.svn/text-base/groups.yml.svn-base -> .svn/pristine/38/38a55581a9fbaeb2173b272f6251cc3ecb6c2945.svn-base
+#	new file:   .svn/pristine/39/397c7eed880f814dabdf93c1d982acaa7600a502.svn-base
+#	renamed:    python/.svn/text-base/ar_inventory.py.svn-base -> .svn/pristine/3e/3e0097dfafea435b28dcaccd4836d596a6fc1acc.svn-base
+#	new file:   .svn/pristine/41/410d7236237695955bb1f9500ffdbf049973815e.svn-base
+#	new file:   .svn/pristine/42/42fa41564917b44183a50c4d94bb03e1768ddad8.svn-base
+#	new file:   .svn/pristine/44/44210cb4245ee5e41d1b029e86a4af449b894410.svn-base
+#	new file:   .svn/pristine/53/53778542532af063e635802a718ec84bd7b77517.svn-base
+#	renamed:    group_vars/.svn/text-base/meth01.svn-base -> .svn/pristine/55/55538bcd36b2f97d0e2e4b5c8fc38fdde6021433.svn-base
+#	new file:   .svn/pristine/55/55dc765b47f7fd64013c037f93df55b3bcae90de.svn-base
+#	new file:   .svn/pristine/55/55dce3822628f2ff4517b6a16e2c3b7fc08e167c.svn-base
+#	new file:   .svn/pristine/56/56ca7d12ce0adcbe567fce1640918653ac17b7cd.svn-base
+#	renamed:    group_vars/.svn/text-base/prod.svn-base -> .svn/pristine/57/5734144ca0e9fa4f16fc46b7790482ec80699153.svn-base
+#	new file:   .svn/pristine/57/57cb3b31c2cf7bd9494a30b42a6783413e7429ab.svn-base
+#	new file:   .svn/pristine/58/5885a56ab4fca8075a05a562d005e922cde9853b.svn-base
+#	new file:   .svn/pristine/5a/5a8d21bcbd3a7d3034aa65c94536a818c01e51c1.svn-base
+#	renamed:    .svn/text-base/ansible_hosts.svn-base -> .svn/pristine/5b/5b77042674abaa702f9de8ea7ad95172974aa509.svn-base
+#	new file:   .svn/pristine/62/628563494643642d6d826de34657c9f71b5d55a0.svn-base
+#	new file:   .svn/pristine/64/640b111c16fc86424af441b43cc17a5455a08b3b.svn-base
+#	renamed:    playbooks/.svn/text-base/fetchfile.yml.svn-base -> .svn/pristine/65/6580d87ecba5299f8e361215c458c51497fbf5ea.svn-base
+#	new file:   .svn/pristine/66/66157f7fb553beb17626da4b3c72a8dc3fb92255.svn-base
+#	new file:   .svn/pristine/6b/6bb624ec8582633af020ad7c28752e76a2b30c56.svn-base
+#	renamed:    playbooks/.svn/text-base/badboys.yml.svn-base -> .svn/pristine/6e/6e0cf43c263b3643b59c040d0724468aba7aca8c.svn-base
+#	new file:   .svn/pristine/6f/6fee8a529f03a3436b2e1c00b33b27b91b4ba746.svn-base
+#	new file:   .svn/pristine/72/725c02f049b85340ad6c13e330b723f25d96a086.svn-base
+#	renamed:    .svn/text-base/ansible-mh-8jan2016.tar.gz.svn-base -> .svn/pristine/73/731e42fb572b86fc395353f45302ede9266c261c.svn-base
+#	renamed:    group_vars/.svn/text-base/uat.svn-base -> .svn/pristine/73/732f0cb2caef221eeaba359d28d2d5285f9f840f.svn-base
+#	new file:   .svn/pristine/75/753b24fb537184540a12cdf5e4b1bb2d35091a45.svn-base
+#	new file:   .svn/pristine/75/75d1aa66c2410fe7cb39393a6e34026648940e8b.svn-base
+#	new file:   .svn/pristine/76/76f67b09d97b32927af1968ce7bf6d8111ebd266.svn-base
+#	new file:   .svn/pristine/77/77e37ec81e55a4b100715264b5ccc7b408ae02a5.svn-base
+#	new file:   .svn/pristine/7c/7cce03f46e5e5fc2bb944b54018cf95127905da2.svn-base
+#	new file:   .svn/pristine/82/8269365e2fdc1556c6ecad8825bc044daa5d23f7.svn-base
+#	new file:   .svn/pristine/85/856215503a9078b2689cb25c3c162de5d367a5ef.svn-base
+#	new file:   .svn/pristine/86/86b9655a9ebbde13ac8dd5795eb4d5b539edab0f.svn-base
+#	renamed:    playbooks/.svn/text-base/top5.yml.svn-base -> .svn/pristine/88/88ca59495078c6000f202aa29b20f30e3602f95b.svn-base
+#	new file:   .svn/pristine/8e/8ee361c756d6eaaf54228082ee65d613e51e277c.svn-base
+#	new file:   .svn/pristine/91/91d3d1a7d6102001cb85fb447a2684c01a0efcb7.svn-base
+#	new file:   .svn/pristine/95/95ad3f22c76d574a18663edd45a69d485000575f.svn-base
+#	new file:   .svn/pristine/96/9635f1b7e12c045212819dd934d809ef07efa2f4.svn-base
+#	renamed:    playbooks/.svn/text-base/webcheck_globalvars.yml.svn-base -> .svn/pristine/9c/9c3ad0578b4577a69e54fa3b1c9e1011c893666d.svn-base
+#	new file:   .svn/pristine/9c/9cf4179e1f066de8416cbcc522d120d19456fd0a.svn-base
+#	renamed:    .svn/text-base/ansible.cfg.svn-base -> .svn/pristine/9d/9d4bf846b714b6e745aaf5462fe07fef99c4b486.svn-base
+#	renamed:    playbooks/.svn/text-base/tomcat_version.yml.svn-base -> .svn/pristine/9d/9d607f2ce56915c723b238fa6562c55fda092d54.svn-base
+#	new file:   .svn/pristine/9d/9de8ba6b4e847d8781046195c183053cfaa4e55d.svn-base
+#	new file:   .svn/pristine/9f/9f3378f7a6b187e32f399e42f4da90ff5b66bc7c.svn-base
+#	renamed:    playbooks/.svn/text-base/webcheck-slack-include.yml.svn-base -> .svn/pristine/a0/a059047821217e73ca4d68b75e5e7661621d0a37.svn-base
+#	renamed:    playbooks/ansible_plugins/callback_plugins/.svn/text-base/human_log.py.svn-base -> .svn/pristine/a2/a24baa1df97bcbc440735c17ea467170255fb0f5.svn-base
+#	new file:   .svn/pristine/a3/a36964d842e32ec6b61fe853de6902a4c2bbe979.svn-base
+#	renamed:    .svn/text-base/readme.md.svn-base -> .svn/pristine/a3/a37602f3f0af4845ab7b5a5df2b3f165275d671e.svn-base
+#	new file:   .svn/pristine/a5/a57bd3dc46943228c0e0f1e94dd9d6e2e4d947de.svn-base
+#	new file:   .svn/pristine/a7/a72a98b2fa3974a6822b7c4c3464ac2cdec7b699.svn-base
+#	renamed:    group_vars/.svn/text-base/meth04.svn-base -> .svn/pristine/aa/aa45b50a85244c04a951d7a81ee01e3daeb6d566.svn-base
+#	new file:   .svn/pristine/aa/aaa13b21838f809ffc98ee851bf4403b6083b248.svn-base
+#	new file:   .svn/pristine/ab/ab92a29709f9482358ca56f12d99501c81da82d6.svn-base
+#	new file:   .svn/pristine/ac/acbaef275e46a7f14c1ef456fff2c8bbe8c84724.svn-base
+#	new file:   .svn/pristine/ad/adc650fa1f6235f8f290dc5dbcf2fd5a82cb60ed.svn-base
+#	new file:   .svn/pristine/af/af602e4eb082756d0954e7d7d2f01c9806017bd8.svn-base
+#	renamed:    group_vars/.svn/text-base/dev.svn-base -> .svn/pristine/af/afcdeb143c395eb240917b3fbaee83a3a5c7e6b4.svn-base
+#	new file:   .svn/pristine/b0/b06796929dc0f2139f980cf1a79abe5b05d9cef2.svn-base
+#	new file:   .svn/pristine/b3/b3856f9d47291363f76804426fd98394facf6793.svn-base
+#	renamed:    python/.svn/text-base/ar_uri.py.svn-base -> .svn/pristine/b5/b5fd7f220f07747b70f48fa0b4b72a64d5a250ef.svn-base
+#	new file:   .svn/pristine/b6/b614c2f63da7dca9f1db2e7ade61ef30448fc96c.svn-base
+#	new file:   .svn/pristine/b6/b6ad58a47fa066c8aa9d0da85daac2c89be62033.svn-base
+#	new file:   .svn/pristine/b8/b849241baf6372899a319d76892b25967d46ef70.svn-base
+#	new file:   .svn/pristine/b9/b90fad225fc28d5dbf0ab65d4d28d9378ca4d764.svn-base
+#	renamed:    playbooks/.svn/text-base/freedb.yml.svn-base -> .svn/pristine/c1/c15d28d5c8ca9e283548c6f6f9d6ba71cf5e7178.svn-base
+#	new file:   .svn/pristine/c5/c54aaeebf11b8b47896f5106e06d4330985dd69f.svn-base
+#	new file:   .svn/pristine/c5/c5df50614d839520e465021bfe5680a387039843.svn-base
+#	renamed:    playbooks/.svn/text-base/slackit.yml.svn-base -> .svn/pristine/c7/c7cdc14301c15fd7e698100ef2f25283b6014a6a.svn-base
+#	new file:   .svn/pristine/c8/c879df015d97615050afa7b9641e3352a1e701ac.svn-base
+#	new file:   .svn/pristine/ca/ca25935f240323751eced8db52bc39a916ffb229.svn-base
+#	new file:   .svn/pristine/ca/cac4162be76361493889f95c489343a3f46a50b5.svn-base
+#	renamed:    playbooks/.svn/text-base/webcheck-slack.yml.svn-base -> .svn/pristine/cb/cba336db56f4c26109f465606d919cfaa680e126.svn-base
+#	new file:   .svn/pristine/cc/cc5a3d4e105a805cb3be2bf4893e7084babddfd0.svn-base
+#	new file:   .svn/pristine/d0/d0c6f52f0ba7230f21a3f0fe588097a3122a28fb.svn-base
+#	renamed:    playbooks/.svn/text-base/slack.yml.svn-base -> .svn/pristine/d3/d38715057f8dfc3b1806ee3c04ed53d49c314fa0.svn-base
+#	new file:   .svn/pristine/d4/d498c047d744235ce5c558e98c0f24455d4ad827.svn-base
+#	renamed:    group_vars/.svn/text-base/meth02.svn-base -> .svn/pristine/d5/d504507af80f380b4dbf32842347ab518fda6ad8.svn-base
+#	new file:   .svn/pristine/d6/d6a98a66a36f2b57ba777157c671984a4dd18274.svn-base
+#	new file:   .svn/pristine/e1/e17392fb9eab0d1dc27b700f11af2bfd21ab9047.svn-base
+#	new file:   .svn/pristine/e3/e37c1d710dd35ca5af89c65985f9bb04f26d1ce6.svn-base
+#	new file:   .svn/pristine/e3/e3dc79424f689aca1603bd565d19350d809bb27c.svn-base
+#	renamed:    playbooks/.svn/text-base/webcheck.yml.svn-base -> .svn/pristine/e6/e653aa2c3fbaa5317e91b247d14d2c9deee5c34a.svn-base
+#	new file:   .svn/pristine/ee/ee1ed5aad98a435f2020b6de35c173b75d9affac.svn-base
+#	renamed:    python/.svn/text-base/ar_tomcatversion.py.svn-base -> .svn/pristine/ee/eebb201d52229d1070abffe4ccedd207b9bba10c.svn-base
+#	new file:   .svn/pristine/f0/f0d601d32a649a52345c44f96b32eb3a39b2c8a7.svn-base
+#	new file:   .svn/pristine/f4/f407eb80fec61bbcc248b88f559ff7fe4d6a14cc.svn-base
+#	new file:   .svn/pristine/f6/f6a63ca2a8e1e136f1fed8fc73047266c85349ec.svn-base
+#	new file:   .svn/pristine/f9/f94db323b6d3a58fef045a8509c2cffe2d96893c.svn-base
+#	new file:   .svn/pristine/fb/fb13a5aa342b00a05d33dc41850a01d7d3fa2aad.svn-base
+#	new file:   .svn/pristine/fd/fd58611d56bab6ba94f977b2b68a469e57ab8661.svn-base
+#	deleted:    .svn/prop-base/ansible-mh-8jan2016.tar.gz.svn-base
+#	new file:   .svn/wc.db
+#	deleted:    callbacks/.svn/all-wcprops
+#	deleted:    callbacks/.svn/entries
+#	deleted:    callbacks/.svn/text-base/human_log.py.svn-base
+#	deleted:    group_vars/.svn/all-wcprops
+#	deleted:    group_vars/.svn/entries
+#	deleted:    playbooks/.svn/all-wcprops
+#	deleted:    playbooks/.svn/entries
+#	deleted:    playbooks/ansible_plugins/.svn/all-wcprops
+#	deleted:    playbooks/ansible_plugins/.svn/entries
+#	deleted:    playbooks/ansible_plugins/.svn/text-base/human_log.py.svn-base
+#	deleted:    playbooks/ansible_plugins/callback_plugins/.svn/all-wcprops
+#	deleted:    playbooks/ansible_plugins/callback_plugins/.svn/entries
+#	deleted:    playbooks/group_vars/.svn/all-wcprops
+#	deleted:    playbooks/group_vars/.svn/entries
+#	deleted:    playbooks/host_vars/.svn/all-wcprops
+#	deleted:    playbooks/host_vars/.svn/entries
+#	deleted:    python/.svn/all-wcprops
+#	deleted:    python/.svn/entries
+#	new file:   svn-commit.tmp
+#

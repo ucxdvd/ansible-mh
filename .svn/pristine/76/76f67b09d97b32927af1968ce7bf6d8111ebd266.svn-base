@@ -1,5 +1,5 @@
 ---
-- name: check services via http(s) gets (depends on group_vars/meth*)
+- name: check services via http(s) gets
   gather_facts: no
   hosts: "*idx*"
   connection: local
@@ -15,7 +15,7 @@
       pub: 64
       pub2: 68
       pub3: 72
-    idxport: #pay attention, there is little logic in the portnumbers : a full table might be needed. also, they do not necessarily allow remote checking
+    idxport: #waste of time, ansible has no check_tcp AND there is little logic in the portnumbers : a full table would be needed 
       dish_action: 200
       dish_port: 201
       alerter1: 010
@@ -45,6 +45,9 @@
       dre1_index: 050
       dre1: 051
       dre1_service: 052
+    dbport:
+      #naming service is too environment specific, must make group_vars
+      #notification0: is there alogic behind notifier ports?
       
 
   tasks:
@@ -57,19 +60,11 @@
     uri: url="http://{{inventory_hostname}}:{{portx}}{{porty}}1{{servletport[item]}}/manager/html" user="admin" password="admin"  #works! brackets ftw!
     with_items: "{{servlets}}"
     register: result
-    tags:
-    - uri
-# TODO: don't just check login success, but also catch tomcat version
-
-# IDEA : port checking.  no ansible module exists, but nc -z works well:
-#  - name: idxservices
-#    command: nc -z {{inventory_hostname}} {{portx}}{{porty}}{{idxport[item]}}
-#    with_items: "{{idxservices}}"
-#    tags:
-#    - idx
+  #- name: idxservices
     
-    
-# Slack integration:    
+ #   ignore_errors: True
+ # - debug: var=result
+ #   when: result|failed
  # - name: reportslack
  #   local_action:
  #     module: slack

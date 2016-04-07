@@ -1,0 +1,12 @@
+porty: 4
+servlets: 
+ - main
+ - inout
+ - web
+ - plan
+ - output
+ - tools
+ - mms
+ - pub
+ - pub2
+ - pub3

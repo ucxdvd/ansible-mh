@@ -1,0 +1,18 @@
+0000000000000000000000000000000000000000 2db3c340a1fce28a8e6a9518e3f2c6bfe2872e27 Dave Van Dijck <dave.vandijck@mediahuis.be> 1451401188 +0100	commit (initial): initial checkin
+2db3c340a1fce28a8e6a9518e3f2c6bfe2872e27 ae91051fa7d6da0c9067c2bbe55e5fa89e8b90d8 Dave Van Dijck <dave.vandijck@mediahuis.be> 1451401214 +0100	commit: added ansible.cfg
+ae91051fa7d6da0c9067c2bbe55e5fa89e8b90d8 d128940c3d90e312de18db8e22db1412beca4f4d Dave Van Dijck <dave.vandijck@mediahuis.be> 1451912181 +0100	commit: moved all vars to group_vars :
+d128940c3d90e312de18db8e22db1412beca4f4d dac317d4106f39fd2817ae16c248db24765daf9f Dave Van Dijck <dave.vandijck@mediahuis.be> 1451912340 +0100	commit: replaced group_vars symlink with a directory containing HARD links
+dac317d4106f39fd2817ae16c248db24765daf9f 0d8ca6001a3746d4c79b866b01203c4f9c846f80 Dave Van Dijck <dave.vandijck@mediahuis.be> 1451912428 +0100	commit: added callbacks/human_log
+0d8ca6001a3746d4c79b866b01203c4f9c846f80 120b97851313ecfae0796f6625d8ac99d16a1f2f Dave Van Dijck <dave.vandijck@mediahuis.be> 1452270251 +0100	commit: latest
+120b97851313ecfae0796f6625d8ac99d16a1f2f e9b7df20e01aadd832fa22a386c15f49af9808c1 Dave Van Dijck <dave.vandijck@mediahuis.be> 1457440571 +0100	commit: first push
+e9b7df20e01aadd832fa22a386c15f49af9808c1 7d0b99ea0c6eceb81d71aa5968957dce4ed55c3a Dave Van Dijck <dave.vandijck@mediahuis.be> 1457456299 +0100	commit: added physical hosts to hosts file
+7d0b99ea0c6eceb81d71aa5968957dce4ed55c3a 6e01c5d80ce5b51fb7ad67cd1351bc5dd8d28258 Dave Van Dijck <dave.vandijck@mediahuis.be> 1457534772 +0100	commit: first attempt at methodehealth dashboard in ansible
+6e01c5d80ce5b51fb7ad67cd1351bc5dd8d28258 4b4990d9122578d47dbc90f1f54d6ee543bc38e0 Dave Van Dijck <dave.vandijck@mediahuis.be> 1458228486 +0100	commit: situation 17/3
+4b4990d9122578d47dbc90f1f54d6ee543bc38e0 bd4816b4b1bd41fde0c380e3b5ec424fa36dd983 Dave Van Dijck <dave.vandijck@mediahuis.be> 1458234322 +0100	commit: added "otheridxports". dbports in progress
+bd4816b4b1bd41fde0c380e3b5ec424fa36dd983 9be849f4478b1a879eded42a0699723da03ad42a Dave Van Dijck <dave.vandijck@mediahuis.be> 1458556325 +0100	commit: goldcopy healthcheck:
+9be849f4478b1a879eded42a0699723da03ad42a 0aecca00fca0f30978bb21cb7c618b1c916a4ef2 Dave Van Dijck <dave.vandijck@mediahuis.be> 1458556524 +0100	commit: cleanup
+0aecca00fca0f30978bb21cb7c618b1c916a4ef2 db1772e2081b60b10b6e8947f0128331effbadf2 Dave Van Dijck <dave.vandijck@mediahuis.be> 1458557161 +0100	commit: Beginnings of now functional methode_health playbook
+db1772e2081b60b10b6e8947f0128331effbadf2 c37d880697ce17be5373919228bb7091a950341f Dave Van Dijck <dave.vandijck@mediahuis.be> 1458557415 +0100	commit: * added goldcopy hosts
+c37d880697ce17be5373919228bb7091a950341f 079c756253748a23b370c0976a3d75f78b4d8e5e Dave Van Dijck <dave.vandijck@mediahuis.be> 1459414291 +0200	commit: new playbook to ensure sysstat is installed and configures correctly (for sar disksstats)
+079c756253748a23b370c0976a3d75f78b4d8e5e d232027e2505a919789228a902a09aa1014c770c Dave Van Dijck <dave.vandijck@mediahuis.be> 1459414412 +0200	commit: list_goldcopy.sh uses ssh to show goldcopy status of all prods
+d232027e2505a919789228a902a09aa1014c770c f44de80142105a51c78630135a421fe85cc24dde Dave Van Dijck <dave.vandijck@mediahuis.be> 1459414691 +0200	commit: put this file in ~/.ssh/config
