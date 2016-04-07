@@ -1,43 +1,43 @@
-porty: 5
-servlets: 
+porty: 3
+servlets:
  - main
  - inout
  - web
- - output
- - tools
- - pub
- - pub2
-# - plan
 dbservices:
  - eomdb1
  - eomdb2
  - eomdb3
- - eomdb4
- - haproxy
+# - eomdb4
+# - haproxy
  - nameservice
  - versant
  - eomse1
+ - eomse2
+# - eomse3
  - eomseqc
  - notification0
  - notification1
  - notification2
+# - notification3
  - alerter1
  - alerter2
  - alerter3
- - alerter4
+# - alerter4
 idxservices:
  - dish
  - autonomy1
+ - autonomy2
+# - autonomy3
  - autonomy_alerter1
  - autonomy_alerter2
  - autonomy_alerter3
- - autonomy_alerter4
+# - autonomy_alerter4
  - tomcat
  - tomcat_inout
- - tomcat_output
+# - tomcat_output
  - tomcat_web
- - tomcat_tools
- - tomcat_pub
+# - tomcat_tools
+# - tomcat_pub
 # - tomcat_pub2
 # - tomcat_pub3
 # - tomcat_mms

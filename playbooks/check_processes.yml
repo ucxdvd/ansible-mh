@@ -1,6 +1,6 @@
 ---
 - name: Check Processes for DB
-  hosts: meth*-db-*
+  hosts: meth*-db-*:!meth01*
   tasks:
   - name: Check Db Processes
     command: cluster/check_{{item}}.bash
@@ -13,7 +13,7 @@
 #  - debug: var=result
 
 - name: Check Processes for IDX
-  hosts: meth*-idx-*
+  hosts: meth*-idx-*:!meth01*
   tasks:
   - name: Check IDX Processes
     command: cluster/check_{{item}}.bash

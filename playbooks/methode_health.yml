@@ -1,5 +1,6 @@
 ---
-- include: webcheck.yml  
 - include: freedb.yml
 - include: deadlocks.yml
 - include: goldcopy.yml
+- include: webcheck.yml  
+- include: check_processes.yml  

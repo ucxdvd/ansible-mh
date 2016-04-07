@@ -43,8 +43,8 @@
 #db-[99:101]-node.example.com
 #
 [dev]
-meth01dev-db-cor ansible_ssh_user=meth01
-meth01dev-idx-cor ansible_ssh_user=meth01
+#meth01dev-db-cor ansible_ssh_user=meth01
+#meth01dev-idx-cor ansible_ssh_user=meth01
 meth02dev-db-cor ansible_ssh_user=meth02
 meth02dev-idx-cor ansible_ssh_user=meth02
 meth03dev-db-cor ansible_ssh_user=meth03
@@ -54,8 +54,8 @@ meth04dev-idx-cor ansible_ssh_user=meth04
 meth05dev-db-cor ansible_ssh_user=meth05
 meth05dev-idx-cor ansible_ssh_user=meth05
 [uat]
-meth01uat-db-cor ansible_ssh_user=meth01
-meth01uat-idx-cor ansible_ssh_user=meth01
+#meth01uat-db-cor ansible_ssh_user=meth01
+#meth01uat-idx-cor ansible_ssh_user=meth01
 meth02uat-db-cor ansible_ssh_user=meth02
 meth02uat-idx-cor ansible_ssh_user=meth02
 meth03uat-db-cor ansible_ssh_user=meth03
@@ -65,8 +65,8 @@ meth04uat-idx-cor ansible_ssh_user=meth04
 meth05uat-db-cor ansible_ssh_user=meth05
 meth05uat-idx-cor ansible_ssh_user=meth05
 [prd]
-meth01-db-cor ansible_ssh_user=meth01
-meth01-idx-cor ansible_ssh_user=meth01
+#meth01-db-cor ansible_ssh_user=meth01
+#meth01-idx-cor ansible_ssh_user=meth01
 meth02-db-cor ansible_ssh_user=meth02
 meth02-idx-cor ansible_ssh_user=meth02
 meth03-db-cor ansible_ssh_user=meth03

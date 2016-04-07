@@ -38,7 +38,7 @@ idxservices:
 # - autonomy_alerter4 # only on meth02 dev & uat
  - tomcat
  - tomcat_inout
-# - tomcat_inout2 # only meth02 prod
+ - tomcat_inout2 # only meth02 prod
 # - tomcat_output
 # - tomcat_web
 # - tomcat_tools

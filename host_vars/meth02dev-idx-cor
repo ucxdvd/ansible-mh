@@ -6,7 +6,7 @@ dbservices:
  - eomdb1
  - eomdb2
  - eomdb3
-# - eomdb4 # only on meth02 dev & uat
+ - eomdb4 # only on meth02 dev & uat
 # - haproxy
  - nameservice
  - versant
@@ -16,26 +16,26 @@ dbservices:
  - eomse2_2
  - eomse2_3
  - eomse2_4
-# - eomse3_1 # only on meth02 dev & uat
+ - eomse3_1 # only on meth02 dev & uat
  - eomseqc
  - notification
  - alerter1
  - alerter2
  - alerter3
-# - alerter4 # only on meth02 dev & uat
+ - alerter4 # only on meth02 dev & uat
 idxservices:
- - dish
+# - dish
  - autonomy1
  - autonomy1_2
  - autonomy1_3
  - autonomy2_2
  - autonomy2_3
  - autonomy2_4
-# - autonomy3_1 # only on meth02 dev & uat
+ - autonomy3_1 # only on meth02 dev & uat
  - autonomy_alerter1
  - autonomy_alerter2
  - autonomy_alerter3
-# - autonomy_alerter4 # only on meth02 dev & uat
+ - autonomy_alerter4 # only on meth02 dev & uat
  - tomcat
  - tomcat_inout
 # - tomcat_inout2 # only meth02 prod
